@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+
+</head>
+
+<body>
+    <h1>يا مرحب 😃! وش اسمك😍؟</h1>
+    <input id="uI"> <br> <br>
+    <button onclick="fun()">  أرسل </button>
+    <h1 id="mesg">  </h1>
+    <style>
+        body {background-image:url(pec.jpg) ;text-align: center ; color:antiquewhite ; position: relative; margin-top: 16%; }
+    </style>
+
+    <script>
+        function fun(){
+          
+            let uI = document.querySelector("#uI");
+            let mesg = document.querySelector("#mesg");
+                mesg.innerHTML = " 🌺 "+ "حللت أهلا ووطئت سهلا أهلا بك يا\t" + uI.value;
+        }
+
+
+   </script>
+</body>
+</html>
